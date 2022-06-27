@@ -10,3 +10,6 @@ Host someinternalhost
         ProxyJump appuser@51.250.72.221
         IdentityFile ~/.ssh/appuser
         User appuser
+
+testapp_IP = 51.250.79.232
+testapp_port = 9292
