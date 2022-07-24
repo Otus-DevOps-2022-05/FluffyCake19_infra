@@ -3,10 +3,6 @@
   hosts: all
   become: true
   tasks:
-    - name: Pause for 30 seconds
-      ansible.builtin.pause:
-        seconds: 30
-  
     - name: Install ruby-full, ruby-bundler, build-essential and git
       apt: "name={{ item }} state=present"
       with_items:
