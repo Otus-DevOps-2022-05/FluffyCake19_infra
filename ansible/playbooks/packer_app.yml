@@ -2,7 +2,7 @@
 - name: Install Rubi and Bundler
   hosts: all
   become: true
-  tasks:
+  tasks:  
     - name: Install ruby-full, ruby-bundler, build-essential and git
       apt: "name={{ item }} state=present"
       with_items:
